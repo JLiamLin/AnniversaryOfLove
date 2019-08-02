@@ -51,8 +51,9 @@
 				document.onmousedown = function(ev) {
 					var oEvent = ev || event;
 					var oDiv = document.createElement('div');
-					var random = Math.floor(Math.random() * 20) + 1;
+					var random = Math.floor(Math.random() * 10) + 1;
 					var randomcolor = Math.floor(Math.random() * 7) + 1;
+					/**
 					if(random == 1) oDiv.innerHTML = "记忆是阵阵花香,我们说好谁都不能忘!";
 					if(random == 2) oDiv.innerHTML = "没有什么能够阻挡,你对自由的向往!";
 					if(random == 3) oDiv.innerHTML = "陪伴是最长情的告白!";
@@ -73,6 +74,17 @@
 					if(random ==18) oDiv.innerHTML = "☆";
 					if(random ==19) oDiv.innerHTML = "★";
 					if(random ==20) oDiv.innerHTML = "☺";
+					*/
+					if(random ==1) oDiv.innerHTML = "❤";
+					if(random ==2) oDiv.innerHTML = "ღ";
+					if(random ==3) oDiv.innerHTML = "❥";
+					if(random ==4) oDiv.innerHTML = "♡";
+					if(random ==5) oDiv.innerHTML = "❣";
+					if(random ==6) oDiv.innerHTML = "✡";
+					if(random ==7) oDiv.innerHTML = "♪";
+					if(random ==8) oDiv.innerHTML = "☆";
+					if(random ==9) oDiv.innerHTML = "★";
+					if(random ==10) oDiv.innerHTML = "☺";					
 					oDiv.style.left = oEvent.clientX + 'px'; // 指定创建的DIV在文档中距离左侧的位置
 					oDiv.style.top = oEvent.clientY + 'px'; // 指定创建的DIV在文档中距离顶部的位置
 					oDiv.style.position = 'absolute'; // 为新创建的DIV指定绝对定位
@@ -89,7 +101,7 @@
 			}
 
 			function timer() {
-				var start = new Date("2018-06-16 10:00:00"); // 2018-06-16
+				var start = new Date("2019-06-29 22:23:00");
 				var t = new Date().getTime() - start;
 				var h = ~~(t / 1000 / 60 / 60 % 24);
 				if(h < 10) {
